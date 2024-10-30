@@ -1,0 +1,115 @@
+/**
+ *
+ * Sample CSS File
+ * 
+ */
+
+
+.table_planned_posts a {
+    text-decoration: none;
+    color: black;
+}
+
+.table_planned_posts a:hover {
+    text-decoration: underline;
+}
+
+li.nav-item {
+    margin-bottom: 0;
+}
+
+input.form-control {
+    width: auto;
+}
+
+.button.button-primary {
+    width: 360px;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    height: 40px;
+    background-color: #0d6efd;
+}
+
+.button.button-primary:hover {
+    background-color: #0d6efd;
+}
+
+.btn-tooltip {
+    font-weight: 400;
+    padding: 0px 6px;
+    border-radius: 50%;
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+.wrap {
+    position: relative;
+    z-index: 1;
+}
+
+.progress-wrap {
+    max-width: 100%;
+    width: 500px;
+    margin: 20px auto;
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-wrap::before {
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    background-color: #e6e6e6;
+}
+
+.progress {
+    width: 0;
+    height: 4px;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+    background-color: #4717a7;
+}
+
+.step {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background-color: #fff;
+    border: 3px solid #e6e6e6;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.step.active {
+    border-color: #4717a7;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+}
+
+.form-inline a {
+    margin-left: 20px;
+    text-decoration: none;
+}
